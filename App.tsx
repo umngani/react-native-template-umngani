@@ -31,15 +31,10 @@ const Section: React.FC<{
   title: string;
 }> = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
+
   return (
     <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
+      <Text style={[styles.sectionTitle, { color: isDarkMode ? Colors.white : Colors.black }]}>
         {title}
       </Text>
       <Text
@@ -90,10 +85,7 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
+  sectionContainer: { marginTop: 32, paddingHorizontal: 24 },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
