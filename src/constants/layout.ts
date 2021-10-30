@@ -1,7 +1,7 @@
 import { Dimensions } from 'react-native';
 import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-// import colors from './colors';
+import colors from './colors';
 
 const { width, height } = Dimensions.get('window');
 
@@ -16,7 +16,7 @@ const getScale = (smallScreenScaling = 0.95, limitScale = true) => {
 };
 
 const shadow = {
-  shadowColor: '#000000',
+  shadowColor: colors.black.darkest(),
   shadowOffset: { width: 0, height: 0 },
   shadowOpacity: 0.08,
   shadowRadius: 8,
@@ -24,7 +24,7 @@ const shadow = {
 };
 
 const highShadow = {
-  shadowColor: '#000000',
+  shadowColor: colors.black.darkest(),
   shadowOffset: { width: 0, height: 7 },
   shadowOpacity: 0.4,
   shadowRadius: 8,
