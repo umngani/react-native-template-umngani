@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import '@/config/reactotron';
 
 import { AppRegistry } from 'react-native';
